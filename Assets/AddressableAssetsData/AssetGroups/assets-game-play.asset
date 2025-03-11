@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: assets-game-play
+  m_EditorClassIdentifier: 
+  m_GroupName: assets-game-play
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 3466be88f7fa25d40a81e15a6a551269
+  m_SerializeEntries:
+  - m_GUID: 90c5fba97aac2f043a3a702bb5f768e8
+    m_Address: DataLevelGame
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6b3e0cc116b43094c997f737ff913d50
+    m_Address: ItemGrid
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7e3cd86225adafc45a9ab09bb17db6c9
+    m_Address: Hammer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: d402ae232a39aec4e9c0ae91be417cce, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 3feeb2a8c3261644ba682ed697669b0e, type: 2}
+    - {fileID: 11400000, guid: 6dd250d7eafdb2e40a5483454a9dc35f, type: 2}

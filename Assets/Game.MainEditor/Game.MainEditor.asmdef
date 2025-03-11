@@ -1,0 +1,20 @@
+{
+    "name": "Game.MainEditor",
+    "rootNamespace": "Game.MainEditor",
+    "references": [
+        "Game.MainGame"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_EDITOR"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
