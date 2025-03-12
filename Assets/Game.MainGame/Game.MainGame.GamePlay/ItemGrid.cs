@@ -27,8 +27,15 @@ namespace Game.MainGame
 
         private int _orderSprBG;
         private Vector3 _posStart;
+        private GameObject _trail;
+        private Rigidbody2D _rb;
 
         public int idSlotUnder;
+
+        private void Awake()
+        {
+            _rb = GetComponent<Rigidbody2D>();
+        }
 
         public StateItem State
         {
@@ -113,6 +120,7 @@ namespace Game.MainGame
         public void ResetAtribute()
         {
             State = StateItem.CanMove;
+            _rb.bodyType = RigidbodyType2D.Static;
             _listGridDown.Clear();
             _listGridTop.Clear();
         }
@@ -181,6 +189,23 @@ namespace Game.MainGame
             }
         }
 
+        public void EffectLose()
+        {
+            _rb.bodyType = RigidbodyType2D.Dynamic;
+
+            float randomAngle = UnityEngine.Random.Range(0f, 360f);
+
+            Vector2 randomDirection = new Vector2(Mathf.Cos(randomAngle * Mathf.Deg2Rad), Mathf.Sin(randomAngle * Mathf.Deg2Rad));
+
+            // Chọn lực ngẫu nhiên từ 10 đến 20
+            float randomForce = UnityEngine.Random.Range(5f, 10f);
+
+            _rb.AddForce(randomDirection * randomForce, ForceMode2D.Impulse);
+
+            float randomTorque = UnityEngine.Random.Range(-10f, 10f); // Xoay theo hướng ngẫu nhiên
+            _rb.AddTorque(randomTorque, ForceMode2D.Impulse);
+        }
+
         public void EndItemGrid(float time)
         {
             StartCoroutine(DelayEndCoroutine(time));
@@ -189,11 +214,14 @@ namespace Game.MainGame
         IEnumerator DelayEndCoroutine(float time)
         {
             yield return new WaitForSeconds(time);
-            transform.DOScale(new Vector3(0f, 0f, 0), 0.2f).OnComplete(() => {
-                LeanPool.Despawn(gameObject);
+            transform.DOScale(new Vector3(1.1f, 1.1f, 0), 0.1f).OnComplete(() => {
+                transform.DOScale(new Vector3(1f, 1f, 0), 0.1f).OnComplete(() => {
+                    LeanPool.Spawn(GameManager.Instance.fxSmoke, transform.position, Quaternion.identity);
+                    LevelManager.Instance.CountDownCountItem();
+                    LeanPool.Despawn(gameObject);
+                });
             });
 
-            LevelManager.Instance.CountDownCountItem();
         }
 
         public void ScaleItem()
@@ -212,11 +240,58 @@ namespace Game.MainGame
             transform.DOScale(new Vector3(1f, 1f, 0), 0.2f);
         }
 
-        public void MovingTarget(Transform target, float time, Action action = null)
+        public void MovingTarget(Transform target, float time, bool isQueue, Action action = null)
         {
-            transform.DOMove(target.position, time).SetEase(Ease.InQuad).OnComplete(() => {
-                action?.Invoke();
-            });
+            if (!isQueue)
+            {
+                transform.DOMove(target.position, time).SetEase(Ease.InOutCubic).OnComplete(() => {
+                    action?.Invoke();
+                });
+            }
+            else
+            {
+                Vector3 startPos = transform.position;
+                Vector3 endPos = target.position;
+
+                // Tính điểm giữa
+                Vector3 midPoint = (startPos + endPos) / 2;
+
+                // Vector hướng từ start đến end
+                Vector3 direction = (endPos - startPos).normalized;
+
+                // Tạo vector vuông góc trong 2D (quay 90 độ)
+                Vector3 perpendicular = new Vector3(-direction.y, direction.x, 0);
+
+                // Chọn một góc ngẫu nhiên từ -10 đến 10 độ
+                float randomAngle = UnityEngine.Random.Range(-10f, 10f);
+                float curveAmount = Vector3.Distance(startPos, endPos) * Mathf.Tan(Mathf.Deg2Rad * randomAngle);
+
+                // Dịch chuyển điểm giữa theo vector vuông góc
+                Vector3 controlPoint = midPoint + perpendicular * curveAmount;
+
+                // Mảng các điểm để DoPath sử dụng
+                Vector3[] pathPoints = { startPos, controlPoint, endPos };
+
+                _trail = LeanPool.Spawn(GameManager.Instance.trail, transform.position, Quaternion.identity);
+                GameManager.Instance.onActionUpdate += UpdateTrail;
+
+                // Di chuyển đối tượng theo đường cong
+                transform.DOPath(pathPoints, time, PathType.CatmullRom, PathMode.Ignore)
+                         .SetEase(Ease.InOutCubic).OnComplete(() => {
+                             action?.Invoke();
+                             if (isQueue)
+                             {
+                                 transform.DOScale(Vector3.one, 0.1f).SetEase(Ease.InOutCubic);
+                                 GameManager.Instance.onActionUpdate -= UpdateTrail;
+                                 LeanPool.Despawn(_trail);
+                             }
+                         });
+            }
+        }
+        
+        public void UpdateTrail()
+        {
+            _trail.transform.position = transform.position;
         }
 
         public void MovingStart(float time)

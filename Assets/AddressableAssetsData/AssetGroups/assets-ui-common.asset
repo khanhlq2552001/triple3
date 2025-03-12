@@ -22,11 +22,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 8e3bcf590d880784a9b5a0ec0a12caf6
-    m_Address: UIInGame
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9cba59bdf871caf49b585b107bbe60a5
     m_Address: menu_btn_sound_off
     m_ReadOnly: 0
@@ -212,11 +207,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: ee3690b0dad104b4b82003369ba38fa2
-    m_Address: UISetting
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ecd7d92f8c82acf49a36ee23f6b68fbc
     m_Address: endgame_ico_replay_small
     m_ReadOnly: 0
@@ -289,11 +279,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9e66fbab43bb67a4f9a164ea46da2e72
     m_Address: Shop_frame_small
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b022af38cd235374b9791fba13e1ce03
-    m_Address: UIWin
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -457,11 +442,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 7e3301f2c0c7e7b4487a7fe6f59d9fea
-    m_Address: UIHome
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2ff51ed2070463d428bb22e15b9bc303
     m_Address: Popup_boost_ico_coin
     m_ReadOnly: 0
@@ -469,21 +449,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: eb7e7776ae7a57346bfb34e3e9adb27b
     m_Address: Popup_boost_ico_ad
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 7969e1a17e3695f4dafcb50b4edede63
-    m_Address: UILose
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 4c1a7ff8dbfee5142af635e4a83b6203
-    m_Address: TxtHeal
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: cb727aaeaf971274eb7357370094d16a
-    m_Address: UIReplay
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

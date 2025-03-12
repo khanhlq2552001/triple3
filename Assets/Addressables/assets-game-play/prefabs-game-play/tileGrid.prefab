@@ -229,12 +229,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c011882c10b7749479479e68615a5de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _type: 0
+  _state: 0
+  _id: 0
+  _idGrid: 0
   _listGridTop: []
   _listGridDown: []
   _sprItem: {fileID: 1295742603527762990}
   _sprBG: {fileID: 7733534392846587279}
   _colorShadow: {r: 0.5568628, g: 0.5568628, b: 0.5568628, a: 1}
+  idSlotUnder: 0
 --- !u!50 &-4792536606065911570
 Rigidbody2D:
   serializedVersion: 4

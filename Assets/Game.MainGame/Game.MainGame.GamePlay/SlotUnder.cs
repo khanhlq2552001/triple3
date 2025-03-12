@@ -11,8 +11,15 @@ namespace Game.MainGame
     {
         [SerializeField] private Transform[] _tranSlots = new Transform[7];
         [SerializeField] private ItemGrid[] _itemGrids = new ItemGrid[7];
+        [SerializeField] private ParticleSystem _partiSmoke;
 
         private int _id;
+        private Animator _animator;
+
+        private void Awake()
+        {
+            _animator = GetComponent<Animator>();
+        }
 
         public void SetItemUnder(int id, ItemGrid item)
         {
@@ -25,10 +32,11 @@ namespace Game.MainGame
                         _id = i +1;
                         MovingRight(i + 1, item);
                         item.State = StateItem.Queue;
-                        item.ScaleNormalItem(false);
-                        item.MovingTarget(_tranSlots[i + 1], 0.3f, item.CheckMovingQueue);
+                        item.MovingTarget(_tranSlots[i + 1], 0.3f,true, item.CheckMovingQueue);
                         CheckEat();
                         CheckBoosterLight();
+                        CheckWarning();
+                        CheckLose();
                         return;
                     }
                 }
@@ -40,10 +48,11 @@ namespace Game.MainGame
                 {
                     _itemGrids[i] = item;
                     item.State = StateItem.Queue;
-                    item.ScaleNormalItem(false);
                     item.SetOrderInLayer(i * 2 + 2000);
-                    item.MovingTarget(_tranSlots[i], 0.3f, item.CheckMovingQueue);
+                    item.MovingTarget(_tranSlots[i], 0.3f, true, item.CheckMovingQueue);
                     CheckBoosterLight();
+                    CheckWarning();
+                    CheckLose();
                     return;
                 }
             }
@@ -51,7 +60,9 @@ namespace Game.MainGame
 
         public void ClearData()
         {
-            for(int i=0; i< _itemGrids.Length; i++)
+            _animator.SetBool("isLose", false);
+            _animator.SetBool("warning", false);
+            for (int i=0; i< _itemGrids.Length; i++)
             {
                 _itemGrids[i] = null;
             }
@@ -107,7 +118,18 @@ namespace Game.MainGame
         {
             if (_itemGrids[_itemGrids.Length - 1] != null)
             {
-                Debug.Log("Lose");
+                _animator.SetBool("isLose", true);
+                _partiSmoke.Play();
+                List<ItemGrid> listItem = LevelManager.Instance.GetItems();
+                for(int i=0; i< listItem.Count; i++)
+                {
+                    if (listItem[i].gameObject.active)
+                    {
+                        listItem[i].State = StateItem.Queue;
+                        listItem[i].SetColorLight();
+                        listItem[i].EffectLose();
+                    }
+                }
             }
         }
 
@@ -132,8 +154,8 @@ namespace Game.MainGame
 
         IEnumerator DelayGomHangCoroutine(ItemGrid item,int id)
         {
-            yield return new WaitForSeconds(0.3f);
-            item.MovingTarget(_tranSlots[id], 0.3f);
+            yield return new WaitForSeconds(0.4f);
+            item.MovingTarget(_tranSlots[id], 0.3f, false);
         }
 
         public void BoosterBack()
@@ -147,6 +169,18 @@ namespace Game.MainGame
                     CheckBoosterLight();
                     return;
                 }
+            }
+        }
+
+        public void CheckWarning()
+        {
+            if (_itemGrids[_itemGrids.Length - 2] != null)
+            {
+                _animator.SetBool("warning", true);
+            }
+            else
+            {
+                _animator.SetBool("warning", false);
             }
         }
 
@@ -178,12 +212,11 @@ namespace Game.MainGame
         public void BoosterLight()
         {
                 int? firstDuplicateId = _itemGrids.Where(item => item != null)
-                                .GroupBy(item => item.ID)
-                                .Where(group => group.Count() >= 2)
-                                .Select(group => group.Key)
-                                .FirstOrDefault();
+                    .GroupBy(item => item.ID)
+                    .Where(group => group.Count() >= 2)
+                    .Select(group => (int?)group.Key) // Chuyển sang nullable int
+                    .FirstOrDefault(); // Trả về null nếu không tìm thấy
                 List<ItemGrid> listItem = LevelManager.Instance.GetItems();
-
                 if (firstDuplicateId != null)
                 {
                     for(int i=0; i< listItem.Count; i++)
@@ -199,12 +232,64 @@ namespace Game.MainGame
                 }
                 else
                 {
-                    int? firstId = _itemGrids.Where(item => item != null)
-                                .GroupBy(item => item.ID)
-                                .Where(group => group.Count() >= 2)
-                                .Select(group => group.Key)
-                                .FirstOrDefault();
+                    int firstId = 0;
+                    bool th2= false;
+                    for(int i=0; i< _itemGrids.Length; i++)
+                    {
+                        if (_itemGrids[i]!= null)
+                        {
+                            firstId = _itemGrids[i].ID;
+                            th2 = true;
+                            break;
+                        }
+                    }
 
+                    if (th2)
+                    {
+                        int count = 0;
+                        for (int i = 0; i < listItem.Count; i++)
+                        {
+                            if ((listItem[i].State == StateItem.DontMove || listItem[i].State == StateItem.CanMove) && listItem[i].ID == firstId)
+                            {
+                                listItem[i].CheckMovingQueue();
+                                listItem[i].SetColorLight();
+                                SetItemUnder(listItem[i].ID, listItem[i]);
+                                count++;
+
+                                if (count == 2)
+                                {
+                                    return;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                int idChoose = 0;
+                int count1 = 0;
+                for (int i = listItem.Count -1; i >= 0; i--)
+                {
+                    if ((listItem[i].State == StateItem.DontMove || listItem[i].State == StateItem.CanMove))
+                    {
+                        idChoose = listItem[i].ID;
+                    break;
+                    }
+                }
+
+                for (int i = listItem.Count -1; i >= 0 ; i--)
+                {
+                    if ((listItem[i].State == StateItem.DontMove || listItem[i].State == StateItem.CanMove) && listItem[i].ID == idChoose)
+                    {
+                        listItem[i].CheckMovingQueue();
+                        listItem[i].SetColorLight();
+                        SetItemUnder(listItem[i].ID, listItem[i]);
+                        count1++;
+
+                        if (count1 == 3)
+                        {
+                            return;
+                        }
+                    }
                 }
         }
     }
