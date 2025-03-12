@@ -17,8 +17,8 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: b18960d4201c7c549bbd868c83953717
   m_SerializeEntries:
-  - m_GUID: 879580a1a3ad484449411b22246a80b6
-    m_Address: assets-ui-common-sprites-button_blue
+  - m_GUID: 81cd4e6f3a23c054d8deb9f2ff5319b6
+    m_Address: handtut1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -27,188 +27,188 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 681ea1f7bc413e94185c3bff92b03e10
-    m_Address: assets-ui-common-sprites-button_close_popup
+  - m_GUID: 9cba59bdf871caf49b585b107bbe60a5
+    m_Address: menu_btn_sound_off
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: a47c3a768706b404badac192141fabd3
-    m_Address: menu_bar_2_2
+  - m_GUID: 53c2fc126a989f945a7faf74411110c8
+    m_Address: Popup_boost
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b15bba6c2e33d0640ae1c1a50401a519
-    m_Address: assets-ui-common-sprites-image_lose_life
+  - m_GUID: 64694ec61b2a6b6449a07f5a2f4d5ce4
+    m_Address: popup_X
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d014b496e3212f142a9c56b985ee68a5
-    m_Address: icon_live
+  - m_GUID: 4696cf8ad9c4a78459b4d780f7ea7458
+    m_Address: Shop_tag_best
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 1f6b1b8505dc52349820fc8fff27450f
-    m_Address: assets-ui-common-sprites-popup_board
+  - m_GUID: c49e946896ff5d140afa49e6afb902a2
+    m_Address: endgame_star1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 7670d0a16dcc8574e97fb12312bcd407
-    m_Address: level_board2_normal
+  - m_GUID: 4c8faf342c6479149b97708eada70da4
+    m_Address: Shop_framebtn_theme
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: fa1ee436e713d8842a792fa0d642d973
-    m_Address: assets-ui-common-sprites-firework_effect4
+  - m_GUID: 556a9d52e814e9e42b9f02bc3ebb1975
+    m_Address: level_star_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b1a99cd3a1ff08e41afa0a6133a0e188
-    m_Address: assets-ui-common-sprites-firework_effect5
+  - m_GUID: 40b3707f3c023a8498775d08cf250656
+    m_Address: level_star_0
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 9bdfb13260ec2fa45bff2129cb8bb642
-    m_Address: assets-ui-common-sprites-icon_booster_magic_s
+  - m_GUID: 16ce1970b13e56c4dbdbc4c7542af79b
+    m_Address: Shop_btn_using
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 865cdaac9f38a4443ac651a928968329
-    m_Address: avatar_border_frame
+  - m_GUID: bc5a1750725cf8542949031115f16a44
+    m_Address: play_ico_shuffle_gray
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 772649e21ec868d46a2e4dab5bf769f1
-    m_Address: level_board1_hard
+  - m_GUID: 248de2222c787bd49ac36bfacc70281a
+    m_Address: Popup_giftbox_ico_ad
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d588573b2abbd7c4386199d278d363c4
-    m_Address: board_edit_avatar
+  - m_GUID: e0a0cb735e5161e4c82276efa8b0a53e
+    m_Address: Popup_boost_frame
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 9b6b281c008cb474091671a6d559fe58
-    m_Address: assets-ui-common-sprites-popup_banner_red
+  - m_GUID: 624e19952348b3b4883e55cc1d5262e5
+    m_Address: popup_btn_orange
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e274b0d7ae73da648b9800e224634017
-    m_Address: icon_menu_shop1
+  - m_GUID: 6e3e91213e4a5884e8871e3836705a78
+    m_Address: play_btn_giftbox
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e31e8e41c96b23542957a0e122595e81
-    m_Address: assets-ui-common-sprites-icon_setting_noti
+  - m_GUID: 838527d7eab485e49b2bba52fd818d56
+    m_Address: play_ico_ad
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 68979ad99a8bd194ea9209b457318669
-    m_Address: assets-ui-common-sprites-image_gate_closed
+  - m_GUID: 9230d65f153da014b87d21544ba2add9
+    m_Address: play_star_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: a97aa8f84c8a5bc429c4dc38f16c7225
-    m_Address: assets-ui-common-sprites-button_grey_s1
+  - m_GUID: 82d2d73f424559e4697d846db62b8d6c
+    m_Address: play_btn_pause
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 52b47cab83f7bb043a1dc6e905ea79c6
-    m_Address: button_setting
+  - m_GUID: 10a9ef9188a7919448284ad7f325a955
+    m_Address: play_ico_hint
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 5c2d2abdab6195e44939301889a2fb6e
-    m_Address: assets-ui-common-sprites-coin_bar
+  - m_GUID: 9d2ace9aab6979e45bbb8e0c0e629c9b
+    m_Address: menu_framebg
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: af1a85a338db52748aa768d70d09513c
-    m_Address: menu_bar_3_1
+  - m_GUID: 8d599b90b94d08549a1e7b12a3ecde3b
+    m_Address: play_ico_undo_gray
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 2cd6ce03bbb1f50439a0d9f6a6e5bc35
-    m_Address: icon_tick
+  - m_GUID: 17115bfd0aca21c42b1d5c35534ebd84
+    m_Address: menu_frame_selectlanguage
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d09f1a54b25abde418c923df9595d63c
-    m_Address: assets-ui-common-sprites-button_yellow
+  - m_GUID: 9ffa3059723e5b541ae13ac6a9cada8b
+    m_Address: menu_ico_scrolllanguage
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3debfa262bf2b8045a351328cb01d186
-    m_Address: assets-ui-common-sprites-image_rate_star2
+  - m_GUID: ec39d1ec5ae18b84ba7f98d8a90a57a4
+    m_Address: endgame_btn_hamburger
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3935b92ccc86acd4da465378212b8743
-    m_Address: menu_bar_2_1
+  - m_GUID: 76c43c68937363044977bbb9ab5697d0
+    m_Address: endgame_btn_green
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 575162b51dad9474c85d4a0b98be5d43
-    m_Address: assets-ui-common-sprites-button_green_s2
+  - m_GUID: 7fb34c49732a10f4fb4606c26c33343c
+    m_Address: Shop_title
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 4d8856012fdf0684eb7066d2331045eb
-    m_Address: Gobua
+  - m_GUID: 5cc705b4d445f0f439877f9aae2c5ac2
+    m_Address: treasure_btn_orange
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 9727d52c01770b241b2da9008ad84035
-    m_Address: avatar_border
+  - m_GUID: 889b9641daecd9d4699ff86ba3b57e74
+    m_Address: menu_btn_sound
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: f74f25d78126b474d8586c54289b5d87
-    m_Address: text_failed
+  - m_GUID: de0d18eac3d472c4d9e7cfcebe98da2a
+    m_Address: level_frame_played
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b3830206976280b41b8396d9631e04ba
-    m_Address: assets-ui-common-sprites-image_booster_hammer
+  - m_GUID: 72edf5094943c304abb3a511dceb8b6d
+    m_Address: level_frame_Lock
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 6e6ed1ec2ae5b8f4cb1702a4aaf534d3
-    m_Address: assets-ui-common-sprites-icon_setting_sound
+  - m_GUID: 705d9e402a48dce4f88e1c646385ae9f
+    m_Address: play_number
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: ce8965e7afff57c42b7b25ee29072462
-    m_Address: assets-ui-common-sprites-popup_board2
+  - m_GUID: 5bb4f6bbc8912a949b32f35949f6414f
+    m_Address: loading_bar
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b41a782b7c0521843971ac836d6e6652
-    m_Address: avatar_frame
+  - m_GUID: c172c803f08396a4ca126590200be129
+    m_Address: endgame_star2
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d1da8995a97b6354892b4a297a01521b
-    m_Address: image_lose_live
+  - m_GUID: 9bf663df9e396224b81879a6379a7c3e
+    m_Address: play_btn_hint0
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 58e16073d1af03a4d816a2598f3a8627
-    m_Address: assets-ui-common-sprites-icon_coin
+  - m_GUID: 86fb841bc0c753a459328e82caead89d
+    m_Address: play_ico_hourglass_progress
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 9239cd1d0b351b24e9dcad0555db1753
-    m_Address: assets-ui-common-sprites-button_blue_setting
+  - m_GUID: 9a0155341c38cd345a4dfbac5de4595d
+    m_Address: play_slot_topframe
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: ee99579d52a826e4b95cf405a83a7314
-    m_Address: assets-ui-common-sprites-firework_effect3
+  - m_GUID: 8da5b6c8bb4088e4186a81ab49dab0ab
+    m_Address: menu_flag_indian
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c88a6651e696a9943b64563a49d4690f
-    m_Address: assets-ui-common-sprites-button_yellow_s2
+  - m_GUID: 7e8a145ad98939c4d8ea7d5d6f78f7b2
+    m_Address: level_title
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -217,78 +217,78 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e5706586ca1a9e141b542e7c6979fd8b
-    m_Address: home_bg_3
+  - m_GUID: ecd7d92f8c82acf49a36ee23f6b68fbc
+    m_Address: endgame_ico_replay_small
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: f31f7a6f93dc0ca40937eed124e12abc
-    m_Address: assets-ui-common-sprites-image_hand_tut
+  - m_GUID: 07b4ff9bc27802f42a91ed5e4f008b0c
+    m_Address: game_title
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 1e2cc7ae48eba524ab2033c906839c61
-    m_Address: assets-ui-common-sprites-button_red
+  - m_GUID: 573872ac028ccfc419a29d94676aa03e
+    m_Address: play_btn_gray
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 496406041f47c1f478dae2f4f6e02123
-    m_Address: menu_bar_1_2
+  - m_GUID: 970a3c74d5c5a2c41a234521fc5cd120
+    m_Address: play_slot_under
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: a06c9e6b476243842955ddb28f66bb07
-    m_Address: button_edit
+  - m_GUID: 94be840e35677c84c9d9febd166123ce
+    m_Address: endgame_coin1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 65d69c150cecba44e8eb39b80a5ff433
-    m_Address: icon_menu_shop2
+  - m_GUID: 511409f88e956d444b4e7ca13520b575
+    m_Address: Shop_icotheme_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 6bd8117aa50e6eb43a7d4ef2cf7412f3
-    m_Address: image_ava_1
+  - m_GUID: a6e350befa080174295acba991b0eb88
+    m_Address: endgame_star3
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 44918ef28e1212b499e54610b55115e4
-    m_Address: assets-ui-common-sprites-icon_watch_video
+  - m_GUID: 8513bb6adc3c9524f9ab3f9edcc0abaf
+    m_Address: Shop_icotheme_2
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 60669e297dc791844869ab4a2670a3c4
-    m_Address: level_board1_normal
+  - m_GUID: 40d5acbafe108c84489d492cdf27deff
+    m_Address: play_ico_undo
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: a8b224334756a7a479bde20ec1723fe2
-    m_Address: assets-ui-common-sprites-image_out_time
+  - m_GUID: 15b166376026eda419ec614896734b7a
+    m_Address: play_topframe
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 80fef4b30bc8ef141bbc05bce9038a02
-    m_Address: assets-ui-common-sprites-firework_effect6
+  - m_GUID: 15b28ee0020b5464b9917c26b6288132
+    m_Address: level_frame_playing
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 53608cb9a00b1d94c9b960f6cdc3e347
-    m_Address: level_board1_superhard
+  - m_GUID: a5d434c0278a31147ad5485b52cf8dde
+    m_Address: menu_flag_german
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 972fe85df068e234ba9dd8fc0b8dba59
-    m_Address: assets-ui-common-sprites-image_booster_magic
+  - m_GUID: a59a9a74b468c8948b12cb9b4115911c
+    m_Address: Endgame_lose
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: fb3951c4d89d7e0469f9bab461d477f6
-    m_Address: sprite-ui-common-1
+  - m_GUID: 5c7b086e957686349a1361119b21665c
+    m_Address: Popup_boost_ico_hint
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 5ad5ab79460d2424892b4124187ef49c
-    m_Address: assets-ui-common-sprites-image_out_life
+  - m_GUID: 9e66fbab43bb67a4f9a164ea46da2e72
+    m_Address: Shop_frame_small
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -297,163 +297,163 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 22da7a5ecaff11a4cbf893c9b3d659d7
-    m_Address: assets-ui-common-sprites-firework_effect1
+  - m_GUID: 765384b53fff28a46814c19fff501860
+    m_Address: level_btn_pageprevious
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 151cbc69d26eb0c45a3fba2b1f027f78
-    m_Address: assets-ui-common-sprites-button_grey_setting
+  - m_GUID: 964f8d448ed0b0648905f3bb54830b2d
+    m_Address: Shop_frame_big
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c869b73af695fc4489cb929ecedfb099
-    m_Address: assets-ui-common-sprites-icon_setting_music
+  - m_GUID: 8c72352ed2fc3e04d85fdbf4389a9efc
+    m_Address: confetti
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 70c36f23d582f3540aa602ce7370a324
-    m_Address: icon_menu_home1
+  - m_GUID: c3fb302ef33339a43a8d99104a23dfdb
+    m_Address: play_ico_coin
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 51e11236757c762469aa8ff631ea9681
-    m_Address: Hammer
+  - m_GUID: 4ad9d93c186f5ec42b73edb780f69c8f
+    m_Address: Shop_framebtn_free
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 8932bafc4638a1d4db4466a8a59accde
-    m_Address: assets-ui-common-sprites-image_life
+  - m_GUID: 554f91fdaab3d004fb6536d31cdf9dc4
+    m_Address: Treasure1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 6c14704db27b3174bbe033c4cb2d4143
-    m_Address: menu_bar_1_1
+  - m_GUID: b3458c6a10fd89c47b231fc452e6522d
+    m_Address: play_btn_shop
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 485024d6bd26790478a27625622b2b27
-    m_Address: assets-ui-common-sprites-button_green
+  - m_GUID: b716adfaf5684f046afb26519233d7ac
+    m_Address: menu_btn_music
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 55ca14c54a4e0c7409fc407078253183
-    m_Address: assets-ui-common-sprites-firework_effect2
+  - m_GUID: 534566d6595ab634db80620dd20f38bd
+    m_Address: play_btn_shuffle
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 62c2b4543b460cc47bcec573695bb5d2
-    m_Address: icon_menu_home2
+  - m_GUID: cbefc06d5ada2014c9af1d4830b66b2d
+    m_Address: Popup_boost_btn_yellow
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 833f13b2dbe126149b2a816679a3538c
-    m_Address: assets-ui-common-sprites-image_rate_star1
+  - m_GUID: c35bcce2e96d7fd478e10dc556cb78af
+    m_Address: Shop_ver2
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 31349048624da1144b4872a232699c57
-    m_Address: home_bg_2
+  - m_GUID: a3168bebd62aa4d40b7b72494f3b77ae
+    m_Address: menu_ico_noads
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 28b0734718560904a8021cdb76abbb24
-    m_Address: assets-ui-common-sprites-popup_board_time
+  - m_GUID: a80c94eae47a7874abf95d95e3b8a28b
+    m_Address: Popup_Menu
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 7040a2b8022edcb48ae8acb352c6bf85
-    m_Address: assets-ui-common-sprites-icon_setting_vibration
+  - m_GUID: 550e88524ededfc4a9c9f07c84fe86d9
+    m_Address: menu_ico_flag_check
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 778efba21ea62784282262adee453fa0
-    m_Address: assets-ui-common-sprites-popup_banner_blue
+  - m_GUID: b4835031adf951f449919d1180b4cbed
+    m_Address: endgame_coin2
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 4502fcc86e4422b48aef4b0cb8ea0ffc
-    m_Address: board_edit_name
+  - m_GUID: ce659bf17e3f47841864534586e4a34b
+    m_Address: Shop_ico_lock
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b703fa5a78f4d7d45a3161423e6fef89
-    m_Address: icon_menu_leaderboard1
+  - m_GUID: d3b267223598d4845ac42db4ba05abe7
+    m_Address: level_btn_menu
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 0f9c672e9f5e6e448923d7b6808d7daf
-    m_Address: assets-ui-common-sprites-firework_effect7
+  - m_GUID: dc930d4b993e6094ea5faeca87ecc058
+    m_Address: Popup_giftbox_ico_coin
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 2088473cce49cc34c9eb7e1389764426
-    m_Address: assets-ui-common-sprites-image_booster_freeze
+  - m_GUID: de343157b09a75b40a275cb3f5ede566
+    m_Address: endgame_btn_home_small
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e56a907a2a577574c9d8a4bd677fb625
-    m_Address: menu_bar_3_2
+  - m_GUID: 420944befaec3474c94b26f7c66d337c
+    m_Address: endgame_star3
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d6c21aeef7ebe6d4e99e38c0561eaad7
-    m_Address: assets-ui-common-sprites-button_coin_add
+  - m_GUID: 869b1b3213b2e2d4a8df6c9eae7e3d7d
+    m_Address: treasure_key
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 9d7321f39bf4f1b48a5175af52a8e36c
-    m_Address: assets-ui-common-sprites-icon_booster_freeze_s
+  - m_GUID: b6f290d9904bb154384563133b557ab2
+    m_Address: endgame_ico_ad
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e51591d681401eb42aec3cd1e155fb38
-    m_Address: assets-ui-common-sprites-icon_coin_s
+  - m_GUID: d604873e048da8b4788d4cc93c9c4558
+    m_Address: Level_previewtreasure
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: ea65a97d51fa2ba41b0524d1da4c4cbf
-    m_Address: assets-ui-common-sprites-text_completed
+  - m_GUID: c691e92d87a6abf409221fa2f8738bf2
+    m_Address: menu_btn_vibration_off
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: ec1e09be5b7006449a7428fae557425a
-    m_Address: home_bg_1
+  - m_GUID: a0448469bfa17d04c815ca510a6c9371
+    m_Address: Loading
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 24b69f6c0e3600142b7a675e9ffd4687
-    m_Address: assets-ui-common-sprites-button_green_setting
+  - m_GUID: 2d2f60cae0075e744b40ae8101c9659a
+    m_Address: endgame_btn_yellow
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d9a330c7c530c2540974347a9ded9812
-    m_Address: assets-ui-common-sprites-icon_life_s
+  - m_GUID: e0eaf38b738397647b2242f65cd56a89
+    m_Address: menu_flag_japanese
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e588abe497941e44590cd3cc85b0af7c
-    m_Address: level_board2_superhard
+  - m_GUID: 2f514b1743d25f34d949c1096066a5af
+    m_Address: play_btn_plus
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 376b9588e2d0dd746b657ee8623d3e19
-    m_Address: assets-ui-common-sprites-icon_booster_hammer_s
+  - m_GUID: 267787f7f7c38194da5ad28e07b693e7
+    m_Address: endgame_star1F
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 78cae6d5f292cb74d8aef07b3cc73d8a
-    m_Address: button_random
+  - m_GUID: 7b35b1ba7a349ff41af5c8713a809c1b
+    m_Address: Popup_Rateus1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 6171ba71a83016b42ab14e40773d4796
-    m_Address: assets-ui-common-sprites-button_home
+  - m_GUID: 63546332bda8d1e488329df93122a12c
+    m_Address: menu_flag_spanish
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d0f2a68c1bef97f4ebde761b86cb0f60
-    m_Address: icon_menu_leaderboard2
+  - m_GUID: 44a0379091299eb4cba4aad0d2ad7d16
+    m_Address: play_star_0
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -462,13 +462,13 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 8d37cfd0fe585a24e962ea89cb3fe8f4
-    m_Address: assets-ui-common-sprites-button_green_s1
+  - m_GUID: 2ff51ed2070463d428bb22e15b9bc303
+    m_Address: Popup_boost_ico_coin
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: db3b67ba2b4d0434bab1caf37bda0692
-    m_Address: level_board2_hard
+  - m_GUID: eb7e7776ae7a57346bfb34e3e9adb27b
+    m_Address: Popup_boost_ico_ad
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -487,13 +487,473 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 85165e530a2f1854e99a05b4cd876bbc
-    m_Address: assets-ui-common-sprites-image_bomb_exploded
+  - m_GUID: 4ad4b537e3b6d094588841ac82f89aef
+    m_Address: menu_flag_turkish
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 60a2f3ce547af984dbaad7be1b439db1
-    m_Address: assets-ui-common-sprites-icon_setting_english
+  - m_GUID: 5815b293ec9519543880c2233a8fe0e0
+    m_Address: menu_btn_music_off
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 26b8bbee101ea664ba30d706d8adbc87
+    m_Address: treasure_box_open
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d89830089cb314a4eada2373e4cf846c
+    m_Address: play_ico_match
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 504522faf0445204e988146896ae3d8e
+    m_Address: treasure_frame
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 967547e7d4091f14e8b9a6bb09fa89d7
+    m_Address: treasure_ico_ad
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d664e2e4e4385c1488709e74ea262fa7
+    m_Address: Level
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fffb21849e6ced442b36de995657ea2b
+    m_Address: menu_ico_flag_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f82dee91843c543488324de807ef63d0
+    m_Address: Popup_RateUs_btn_yellow
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b0507361efdaeba429777a9662b305a4
+    m_Address: Popup_Nointernet
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 138772bf7664a114eb06e671a0b93591
+    m_Address: Play copy
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2c703a68489e9dc4f936715a8dea4df0
+    m_Address: Endgame_lose copy
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bd8cc07034e82ae4daac0639a0a154ab
+    m_Address: Popup_RateUs_star_0
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 182ceb4eb43de3642bcd4c849e0e9420
+    m_Address: menu_ico_replay
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 58c06cb8994f63c4f94e7d3b07f75278
+    m_Address: menu_btn_orange
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d129f826aac6f8647a24f82bf4d59b4b
+    m_Address: menu_btn_brown
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3dcc624d49c62e44fbc6bf3bcfae243e
+    m_Address: menu_flag_korean
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b0d73f3cef5f70444938f2a8d38971ef
+    m_Address: endgame_ico_replay
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7d303c83d82303b4fa6bb86277ddb652
+    m_Address: level_btn_play
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4e52bb00eca70ab49835ac0da35fedb6
+    m_Address: menu_ico_shop
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a0e23a905abd32b43936487715d1477c
+    m_Address: endgame_ribbonwin
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1604abdabb62af243b6beeee7954914b
+    m_Address: Popup_giftbox_ico_gift
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6454e26eb899c804db360afbdcc69021
+    m_Address: play_bar_coin
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 39c21b9168b17e64a963c75d5eccc4d8
+    m_Address: endgame_ico_next
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 69cdd415a16df77448eccc52838d5e49
+    m_Address: endgame_btn_replay_long
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f6259c8f6f2417c408a807146c33232e
+    m_Address: Popup_boost_ico_undo
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e59096c364479284f815d809deb68837
+    m_Address: Shop_framebtn_removeads
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 05bffe1bb8e6abb4b9c71ff9654065c9
+    m_Address: Shop_tag_hot
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5ab71749ff4af3f47a1a3aa1dc7ce859
+    m_Address: play_aura_giftbox
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6498f274b4e1fdc499b6b2fc01def314
+    m_Address: Popup_Language
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 02adbda32000665468ad73287577d9ed
+    m_Address: level_page
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3f4787aff507da745bffc1aa7147c972
+    m_Address: handtut2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 418620ffdabf3af4bb6bd7501a3fd706
+    m_Address: play_btn_shuffle0
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e2cb1da74210aa34d80bcf19fd86c91e
+    m_Address: level_ico_treasure
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0f866f1ce9f485b40bf0f12bf23a33c7
+    m_Address: play_btn_undo0
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f5faf7e7ebf8c28408195748c585bde5
+    m_Address: Shop_ico_coin_big
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5398a54c10b012a41b495d1f6e7b55bf
+    m_Address: menu_flag_english
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9ddf38a987bc1a34a8e5130b182c0fc9
+    m_Address: Shop_ico_coin_green
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8de1fb4065133fe45beccf4ca087c665
+    m_Address: Shop_ico_removeads
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 78826cb63b3ea3f4baf37ac80e130356
+    m_Address: play_btn_green
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5e7366c5ad2b15744927c2aa63f34c10
+    m_Address: endgame_ColorFill
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bd484e65ca5f3bb4786a09194764b91b
+    m_Address: menu_flag_italian
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: be57b53c0079a0a47a58d2b15c7c382a
+    m_Address: Treasure
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 43557f65b83fb5e44b6352b95c3af45d
+    m_Address: treasure_btn_green
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0eb05d6613bb96b4bb1d42cf66b28dc5
+    m_Address: Popup_boost_ico_shuffle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dfd23505661b8bb45a57834bc590d648
+    m_Address: Popup_RateUs_star_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8e87fcd92f62a5a4789e3c63b3ee9e58
+    m_Address: Popup_RateUs_frame
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 47f4a432f27f2704b9271066f19a7b7b
+    m_Address: Shop_btn_green
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1bc671c8b2842ec48a00c35a21793b7b
+    m_Address: play_ico_hourglass
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 60ecd52ae829fe4409e36ac3a06f4b51
+    m_Address: menu_ico_rate
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5b1f99b4d47e5ff42bbc08a7da1df624
+    m_Address: loading_progress
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2e41b76af2ba72b4d9414f765fec6f9d
+    m_Address: Popup_giftbox
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3d0e9360dce90cc4c94f1c08a05f023a
+    m_Address: endgame_star2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 30ac3908867e4454082d959f2b0df46b
+    m_Address: Popup_Rateus2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dbdb41e9f6937a545b020a70c7557a0a
+    m_Address: endgame_aura
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4ca6e564c818c7e4bb002edcf1c99db0
+    m_Address: level_btn_pagenext
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 27aea5128bd2f62459d15205d978c372
+    m_Address: menu_btn_vibration
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a43ae51e5d3fa994ab81c3425a3f2f6f
+    m_Address: popup_frame_normal
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fc9c3e466dc36db45b5c43d36bdc2a55
+    m_Address: Popup_RateUs_btn_gray
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b7dcf8c4d90d4ea458ec035a0d0c782f
+    m_Address: level_ico_treasure_open
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aa4cd70f6b0564b43ab7b4738ffe845d
+    m_Address: Treasure2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c83c26c3ae8a47246be77249fc5653ae
+    m_Address: shop_icocheck
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 89932d354648e204080e90ffd233a189
+    m_Address: Shop_btn_back
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d1c82ddbf68f2834eaf3cb44a7a86f85
+    m_Address: Popup_boost_btn_green
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 396bccd8368b6484a90083ffe3bb4817
+    m_Address: menu_ico_level
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bb76ee74846c69642a3bde053ba2ec3f
+    m_Address: BG
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 47c73a7572ed514498d8ce7785009a81
+    m_Address: menu_flag_russian
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1b05e71c5734726448c6dceaa133f231
+    m_Address: Popup_Language
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5d6463622ad88ab43a21dedf7c196229
+    m_Address: tile_under
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e702129f9992c2543b26ce4fb863e528
+    m_Address: menu_flag_vietnamese
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a6ba1e6805c5d9c49bc6e0d3e7c84703
+    m_Address: play_ico_shuffle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: afae7320081cbd44ea6331800938f1e3
+    m_Address: Shop_ver2 copy
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5cd4e12325267fc4f928a6f8e2dc751e
+    m_Address: Endgame_win copy
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0a1a70bda9951f44c8a6b9ebb885241e
+    m_Address: endgame_btn_yellowsmall
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3e988fb33a834a54f92dff7a420fe227
+    m_Address: endgame_ico_home
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b37a7a24ec73c0f44a1eefb72e6cb888
+    m_Address: Popup_Pause
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 28fff672dd888654eb0ca950f6bc78c5
+    m_Address: Popup_giftbox_ico_plus
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4a8b221c2d411a74d8676dea4d37ae58
+    m_Address: play_btn_undo
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c6af621c4481aa94d9bd2d730c4c010e
+    m_Address: Shop_framebtn_usd
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 19d63cb53e6b2a54bb57e7152733d4c0
+    m_Address: Shop_btn_removeads
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dcb9f45ba2d4515499705e219e54b6e5
+    m_Address: Shop_btn_blue
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 72eefcd9734f93542a50bffd56367bc4
+    m_Address: play_ico_hint_gray
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8568fbd40a0715e4fab688ba40287140
+    m_Address: tile
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7abdec29d7af7cf40915e3b6afe5819b
+    m_Address: menu_btn_X
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c37c11cef1794ed4cbe0fa26215e3fb7
+    m_Address: treasure_key_lost
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d5223e85f9ed11c42b62f6e50503e370
+    m_Address: Popup_giftbox_btn_green
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 17c95de5926ebd8439fb9fdd0967a39b
+    m_Address: endgame_ribbon_lose
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c9fe566639e6fdf4fa1efa0eec303bba
+    m_Address: treasure_coin
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8fbbdc08e078eb84cbdb218b2cfe53d0
+    m_Address: menu_ico_language
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5f4f5f1aa1ee8254fac93d046aa83312
+    m_Address: Shop_ico_ad
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 926d41cec88ce1e4381203f643820c5f
+    m_Address: level_frame_playing_icon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f21e092add36979449caadea68498fce
+    m_Address: treasure_box
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ae833a9c35332b1448c337f8d8aae019
+    m_Address: play_btn_hint
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 092b96a15e1ad344783bb4d60fd9c7b3
+    m_Address: UIGamePlay
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
