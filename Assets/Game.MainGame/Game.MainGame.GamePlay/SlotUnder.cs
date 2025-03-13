@@ -128,9 +128,17 @@ namespace Game.MainGame
                         listItem[i].State = StateItem.Queue;
                         listItem[i].SetColorLight();
                         listItem[i].EffectLose();
+                        StartCoroutine(DelayLoseCoroutine());
                     }
                 }
             }
+        }
+
+        IEnumerator DelayLoseCoroutine()
+        {
+            LevelManager.Instance.controller.State = StateController.pause;
+            yield return new WaitForSeconds(1.5f);
+            UIManager.Instance.QueuePush(GameManager.ScreenID_UILose, null, "UILose", null);
         }
 
         private void GomHang(int idx)

@@ -159,7 +159,7 @@ namespace Game.MainGame
 
         public void CheckOverlapCollider()
         {
-            Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, 0.5f);
+            Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, 0.3f);
             foreach (Collider2D col in hitColliders)
             {
                 if (col.gameObject.name == ("tileGrid_" + (IDGrid -1)))
@@ -174,7 +174,7 @@ namespace Game.MainGame
         public void CheckOverLapTop()
         {
             _listGridTop.Clear();
-            Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, 0.5f);
+            Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, 0.3f);
             foreach (Collider2D col in hitColliders)
             {
                 ItemGrid item = col.GetComponent<ItemGrid>();
@@ -288,7 +288,7 @@ namespace Game.MainGame
                          });
             }
         }
-        
+
         public void UpdateTrail()
         {
             _trail.transform.position = transform.position;

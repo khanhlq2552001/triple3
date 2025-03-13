@@ -10,6 +10,9 @@ namespace Game.MainGame
         [SerializeField] private Button _btnBoosterRestart;
         [SerializeField] private Sprite _sprOn;
         [SerializeField] private Sprite _sprOff;
+        [SerializeField] private Button _btnPause;
+        [SerializeField] private Text _txtCoin;
+        [SerializeField] private Animator _animDHC;
 
         public override void OnFocus()
         {
@@ -28,6 +31,12 @@ namespace Game.MainGame
         {
             PushFinished();
             _btnBoosterLight.interactable = true;
+        }
+
+        public void ExitUI()
+        {
+            OnPop();
+            gameObject.SetActive(false);
         }
 
         public override void OnSetup()

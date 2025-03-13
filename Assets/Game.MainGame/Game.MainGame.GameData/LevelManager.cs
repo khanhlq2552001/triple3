@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using BlitzyUI;
 using DG.Tweening;
 using Lean.Pool;
 using UnityEngine;
@@ -13,6 +14,7 @@ namespace Game.MainGame
         [SerializeField] private ItemGrid _objTile1;
         [SerializeField] private ItemGrid _objTile2;
         [SerializeField] private Data _data;
+        [SerializeField] private DataLevel _dataLevels;
         [SerializeField] private float _spacing = 1.1f;
         [SerializeField] private List<Transform>  _tranParent;
         [SerializeField] private List<ItemGrid> _items;
@@ -34,12 +36,22 @@ namespace Game.MainGame
 
         private void Start()
         {
-            GenerateData();
+      //      GenerateData();
         }
 
         public List<ItemGrid> GetItems()
         {
             return _items;
+        }
+
+        public DataLevel GetDatas()
+        {
+            return _dataLevels;
+        }
+
+        public void SetLevel(int Level)
+        {
+            _data = _dataLevels.listData[Level];
         }
 
         public void GenerateData()
@@ -48,6 +60,7 @@ namespace Game.MainGame
             _items.Clear();
             _idOrder = 0;
             _countItem = 0;
+            slotUnder.gameObject.SetActive(true);
 
           for(int i=0; i< _data.grids.Count; i++)
             {
@@ -151,8 +164,14 @@ namespace Game.MainGame
 
             if(_countItem == 0)
             {
-                Debug.Log("Win");
+                StartCoroutine(DelayWinCoroutine());
             }
+        }
+        IEnumerator DelayWinCoroutine()
+        {
+            controller.State = StateController.pause;
+            yield return new WaitForSeconds(1f);
+            UIManager.Instance.QueuePush(GameManager.ScreenID_UIWin, null, "UIWin", null);
         }
 
         public void BoosterBack()
@@ -169,8 +188,23 @@ namespace Game.MainGame
                     LeanPool.Despawn(_items[i]);
                 }
             }
+
+            _items.Clear();
             slotUnder.ClearData();
             GenerateData();
+        }
+
+        public void ClearData()
+        {
+            for (int i = 0; i < _items.Count; i++)
+            {
+                if (_items[i].gameObject.active)
+                {
+                    LeanPool.Despawn(_items[i]);
+                }
+            }
+
+            _items.Clear();
         }
 
         public void BoosterLight()
