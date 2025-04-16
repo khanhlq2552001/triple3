@@ -2,6 +2,9 @@
     "dependencies": {
         "com.lean.pool": "file:com.lean.pool-8.0.1.tgz",
         "com.text-mesh": "file:com.text-mesh-0.0.1.tgz",
+        "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
+        "com.annulusgames.lit-motion": "https://github.com/AnnulusGames/LitMotion.git?path=src/LitMotion/Assets/LitMotion",
+        "com.annulusgames.lit-motion.animation": "https://github.com/AnnulusGames/LitMotion.git?path=src/LitMotion/Assets/LitMotion.Animation",
         "com.unity.addressables": "1.21.21",
         "com.unity.collab-proxy": "2.7.1",
         "com.unity.feature.2d": "2.0.0",

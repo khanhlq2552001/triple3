@@ -29,12 +29,14 @@ namespace Game.MainGame
         private Vector3 _posStart;
         private GameObject _trail;
         private Rigidbody2D _rb;
+        private BoxCollider2D _boxCollider;
 
         public int idSlotUnder;
 
         private void Awake()
         {
             _rb = GetComponent<Rigidbody2D>();
+            _boxCollider = GetComponent<BoxCollider2D>();
         }
 
         public StateItem State
@@ -250,6 +252,7 @@ namespace Game.MainGame
             }
             else
             {
+                _boxCollider.enabled = false;
                 Vector3 startPos = transform.position;
                 Vector3 endPos = target.position;
 
@@ -278,6 +281,7 @@ namespace Game.MainGame
                 // Di chuyển đối tượng theo đường cong
                 transform.DOPath(pathPoints, time, PathType.CatmullRom, PathMode.Ignore)
                          .SetEase(Ease.InOutCubic).OnComplete(() => {
+                             _boxCollider.enabled = true;
                              action?.Invoke();
                              if (isQueue)
                              {

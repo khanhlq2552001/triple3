@@ -12,7 +12,6 @@ namespace Game.MainGame
         public static LevelManager Instance;
 
         [SerializeField] private ItemGrid _objTile1;
-        [SerializeField] private ItemGrid _objTile2;
         [SerializeField] private Data _data;
         [SerializeField] private DataLevel _dataLevels;
         [SerializeField] private float _spacing = 1.1f;
