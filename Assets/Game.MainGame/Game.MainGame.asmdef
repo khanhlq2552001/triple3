@@ -8,7 +8,11 @@
         "Unity.TextMeshPro.Editor",
         "Unity.TextMeshPro",
         "UniTask.Editor",
-        "UniTask"
+        "UniTask",
+        "LitMotion",
+        "LitMotion.Animation",
+        "LitMotion.Editor",
+        "LitMotion.Animation.Editor"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

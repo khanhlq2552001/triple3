@@ -17,6 +17,7 @@ namespace Game.MainGame
         private void Awake()
         {
             base.Awake();
+            DontDestroyOnLoad(gameObject);
             Game.Launch();
         }
 
@@ -27,5 +28,17 @@ namespace Game.MainGame
             SceneManager.LoadSceneAsync(Name_Scene_Main);
         }
 
+        public void CheckFirstData()
+        {
+            if (!UserData.isFirst)
+            {
+                UserData.isFirst = true;
+                UserData.levelChoose = 0;
+                UserData.levelLevel = 1;
+                UserData.soundOn = true;
+                UserData.musicOn = true;
+                UserData.vibrateOn = true;
+            }
+        }
     }
 }

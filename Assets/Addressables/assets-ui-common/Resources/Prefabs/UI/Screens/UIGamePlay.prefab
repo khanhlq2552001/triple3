@@ -779,8 +779,9 @@ MonoBehaviour:
   _btnBoosterRestart: {fileID: 2170398386607892058}
   _sprOn: {fileID: 21300000, guid: ae833a9c35332b1448c337f8d8aae019, type: 3}
   _sprOff: {fileID: 21300000, guid: 9bf663df9e396224b81879a6379a7c3e, type: 3}
-  _btnPause: {fileID: 0}
+  _btnPause: {fileID: 6544456597299028743}
   _txtCoin: {fileID: 0}
+  _animDHC: {fileID: 0}
 --- !u!223 &4809695999412631205
 Canvas:
   m_ObjectHideFlags: 0

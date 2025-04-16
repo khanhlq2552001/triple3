@@ -1,3 +1,4 @@
+using BlitzyUI;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -45,6 +46,7 @@ namespace Game.MainGame
             _btnBoosterBack.onClick.AddListener(()=> BtnBoosterBack());
             _btnBoosterLight.onClick.AddListener(() => BtnBoosterLight());
             _btnBoosterRestart.onClick.AddListener(() => BtnBoosterRestart());
+            _btnPause.onClick.AddListener(() => BtnPause());
         }
 
         public void SetActiveBoosterLight(bool isActive)
@@ -74,6 +76,11 @@ namespace Game.MainGame
         private void BtnBoosterRestart()
         {
             LevelManager.Instance.BoosterRestart();
+        }
+
+        private void BtnPause()
+        {
+            UIManager.Instance.QueuePush(GameManager.ScreenUi_Setting, null, "UiSetting", null);
         }
     }
 }

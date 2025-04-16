@@ -11,6 +11,7 @@ namespace Game.MainGame
         public static readonly BlitzyUI.Screen.Id ScreenID_UIWin = new BlitzyUI.Screen.Id("UIWin");
         public static readonly BlitzyUI.Screen.Id ScreenID_UILose = new BlitzyUI.Screen.Id("UILose");
         public static readonly BlitzyUI.Screen.Id ScreenID_Home = new BlitzyUI.Screen.Id("UIHome");
+        public static readonly BlitzyUI.Screen.Id ScreenUi_Setting = new BlitzyUI.Screen.Id("UiSetting");
 
         public GameObject fxSmoke;
         public Action onActionUpdate;
@@ -24,13 +25,13 @@ namespace Game.MainGame
             if(Instance == null)
             {
                 Instance = this;
-                SetUpData();
+           //     SetUpData();
             }
         }
 
         private void Start()
         {
-            SetLevelChoose(PlayerPrefs.GetInt("levelChoose"));
+            SetLevelChoose(Manager.Instance.UserData.levelChoose);
             UIManager.Instance.QueuePush(ScreenID_Home, null, "UIHome", null);
         }
 
@@ -41,26 +42,15 @@ namespace Game.MainGame
 
         public void SetLevel(int Level)
         {
-            PlayerPrefs.SetInt("level", Level);
+            Manager.Instance.UserData.levelLevel = Level;
             onActionUpdate?.Invoke();
         }
 
         public void SetLevelChoose(int level)
         {
-            PlayerPrefs.SetInt("levelChoose", level);
+            Manager.Instance.UserData.levelChoose = level;
             onUpdateLevelChoose?.Invoke();
             LevelManager.Instance.SetLevel(level);
-        }
-
-        private void SetUpData()
-        {
-            if (!PlayerPrefs.HasKey("isFirst"))
-            {
-                PlayerPrefs.SetInt("isFirst", 1);
-                PlayerPrefs.SetInt("coin", 0);
-                PlayerPrefs.SetInt("level", 1);
-                PlayerPrefs.SetInt("levelChoose", 0);
-            }
         }
     }
 }

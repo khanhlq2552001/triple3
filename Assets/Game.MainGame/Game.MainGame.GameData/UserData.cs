@@ -8,6 +8,7 @@ namespace Game.MainGame
     public class UserData : SavePlayerPrefs
     {
         public string lastTimePlayGame = string.Empty;
+        public bool isFirst = false;
         public int incomePerMin;
         public int playerCash;
         public int playerDiamond;
@@ -29,7 +30,8 @@ namespace Game.MainGame
         public bool isOpenTutorailThermometer;
         public DataTrackingFirebase dataTrackingFirebase;
 
-        public int countDiamondDaily = 5;
+        public int levelChoose;
+        public int levelLevel;
 
         public bool isX2MoneyIap;
         public float timeX2Iap;
@@ -43,9 +45,6 @@ namespace Game.MainGame
         public bool isVehiIap;
         public float timeVehi;
 
-
-        public bool isFirstClaimDailyReward;
-        public bool isShowDailyReward;
 
 
     }
