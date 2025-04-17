@@ -46,6 +46,16 @@ namespace Game.MainGame
             }
         }
 
+        public void PauseGame()
+        {
+            _stateController = StateController.pause;
+        }
+
+        public void ResumGame()
+        {
+            _stateController = StateController.normal;
+        }
+
         public StateController State
         {
             get => _stateController;

@@ -12,25 +12,24 @@ namespace Game.MainGame
         public static readonly BlitzyUI.Screen.Id ScreenID_UILose = new BlitzyUI.Screen.Id("UILose");
         public static readonly BlitzyUI.Screen.Id ScreenID_Home = new BlitzyUI.Screen.Id("UIHome");
         public static readonly BlitzyUI.Screen.Id ScreenUi_Setting = new BlitzyUI.Screen.Id("UiSetting");
+        public static readonly BlitzyUI.Screen.Id ScreenUi_BuyBooster = new BlitzyUI.Screen.Id("UIBuyBooster");
 
         public GameObject fxSmoke;
         public Action onActionUpdate;
         public GameObject trail;
         public Action onUpdateLevel;
         public Action onUpdateLevelChoose;
+        public GameController controller;
 
         private void Awake()
         {
             Application.targetFrameRate = 60;
-            if(Instance == null)
-            {
-                Instance = this;
-           //     SetUpData();
-            }
+            Instance = this;
         }
 
         private void Start()
         {
+            Debug.Log(Manager.Instance.UserData.levelChoose);
             SetLevelChoose(Manager.Instance.UserData.levelChoose);
             UIManager.Instance.QueuePush(ScreenID_Home, null, "UIHome", null);
         }

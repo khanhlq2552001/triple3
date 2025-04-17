@@ -33,6 +33,13 @@
       "source": "local-tarball",
       "dependencies": {}
     },
+    "com.peturdarri.generic-event-bus": {
+      "version": "0.1.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
     "com.text-mesh": {
       "version": "file:com.text-mesh-0.0.1.tgz",
       "depth": 0,

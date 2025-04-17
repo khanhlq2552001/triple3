@@ -10,8 +10,7 @@ namespace Game.MainGame
         public string lastTimePlayGame = string.Empty;
         public bool isFirst = false;
         public int incomePerMin;
-        public int playerCash;
-        public int playerDiamond;
+        public int playerCoin;
         public int currentMap;
         public bool hasUnlockMap;
         public bool soundOn;
@@ -45,7 +44,9 @@ namespace Game.MainGame
         public bool isVehiIap;
         public float timeVehi;
 
-
+        public int quantityBoosterBack;
+        public int quantityBoosterHint;
+        public int quantityBoosterRestart;
 
     }
 

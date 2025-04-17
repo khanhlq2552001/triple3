@@ -1,4 +1,5 @@
 using BlitzyUI;
+using Game.Modules.Events;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,11 +22,15 @@ namespace Game.MainGame
         public override void OnPop()
         {
             PopFinished();
+            EventManager.UnsubscribeFrom<EventUpdateCoin>(OnUpdateCoin);
         }
 
         public override void OnPush(Data data)
         {
             PushFinished();
+            EventManager.Raise(new EventLoseGame() { });
+            UpdateCoin();
+            EventManager.SubscribeTo<EventUpdateCoin>(OnUpdateCoin);
         }
 
         public override void OnSetup()
@@ -33,6 +38,16 @@ namespace Game.MainGame
             GetComponent<Canvas>().overrideSorting = false;
             _btnRevive.onClick.AddListener(() => BtnRevive());
             _btnRestart.onClick.AddListener(() => BtnReplay());
+        }
+
+        public void UpdateCoin()
+        {
+            _txtCoin.text = Manager.Instance.UserData.playerCoin.ToString();
+        }
+
+        private void OnUpdateCoin(ref EventUpdateCoin eve)
+        {
+            UpdateCoin();
         }
 
         public void BtnRevive()

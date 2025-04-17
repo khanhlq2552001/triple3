@@ -19,12 +19,14 @@ namespace Game.MainGame
             base.Awake();
             DontDestroyOnLoad(gameObject);
             Game.Launch();
+
         }
 
         // Start is called before the first frame update
         private void Start()
         {
             UserData = Game.Data.Load<UserData>();
+            CheckFirstData();
             SceneManager.LoadSceneAsync(Name_Scene_Main);
         }
 
@@ -33,11 +35,15 @@ namespace Game.MainGame
             if (!UserData.isFirst)
             {
                 UserData.isFirst = true;
-                UserData.levelChoose = 0;
+                UserData.levelChoose = 1;
                 UserData.levelLevel = 1;
                 UserData.soundOn = true;
                 UserData.musicOn = true;
                 UserData.vibrateOn = true;
+                UserData.quantityBoosterBack = 1;
+                UserData.quantityBoosterHint = 1;
+                UserData.quantityBoosterRestart = 1;
+                UserData.playerCoin = 0;
             }
         }
     }

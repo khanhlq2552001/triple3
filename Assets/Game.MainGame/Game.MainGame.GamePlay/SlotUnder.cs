@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using BlitzyUI;
 using DG.Tweening;
+using Game.Modules.Events;
 using UnityEngine;
 
 namespace Game.MainGame
@@ -175,6 +176,8 @@ namespace Game.MainGame
                     _itemGrids[i].MovingStart(0.3f);
                     _itemGrids[i] = null;
                     CheckBoosterLight();
+                    Manager.Instance.UserData.quantityBoosterBack--;
+                    EventManager.Raise(new EventUpdateBooster() { });
                     return;
                 }
             }

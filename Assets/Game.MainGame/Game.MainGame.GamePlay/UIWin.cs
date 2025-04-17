@@ -1,4 +1,5 @@
 using BlitzyUI;
+using Game.Modules.Events;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -23,32 +24,19 @@ namespace Game.MainGame
         public override void OnPop()
         {
             PopFinished();
+            EventManager.UnsubscribeFrom<EventUpdateCoin>(OnUpdateCoin);
         }
 
         public override void OnPush(Data data)
         {
             PushFinished();
-        }
+            UpdateCoin();
+            EventManager.SubscribeTo<EventUpdateCoin>(OnUpdateCoin);
 
-        public override void OnSetup()
-        {
-            GetComponent<Canvas>().overrideSorting = false;
-            _btnRewardAds.onClick.AddListener(() => BtnRewardAds());
-            _btnReward.onClick.AddListener(() => BtnReward());
-            _btnHome.onClick.AddListener(() => BtnHome());
-        }
+            int level = Manager.Instance.UserData.levelLevel;
+            int levelChoose = Manager.Instance.UserData.levelChoose;
 
-        public void BtnRewardAds()
-        {
-
-        }
-
-        public void BtnReward()
-        {
-            int level = PlayerPrefs.GetInt("level");
-            int levelChoose = PlayerPrefs.GetInt("levelChoose");
-
-            if(levelChoose == level)
+            if (levelChoose == level)
             {
                 levelChoose++;
                 GameManager.Instance.SetLevel(levelChoose);
@@ -60,9 +48,55 @@ namespace Game.MainGame
                 GameManager.Instance.SetLevelChoose(levelChoose);
             }
 
+            EventManager.Raise(new EventWinGame() { });
+        }
+
+        public override void OnSetup()
+        {
+            GetComponent<Canvas>().overrideSorting = false;
+            _btnRewardAds.onClick.AddListener(() => BtnRewardAds());
+            _btnReward.onClick.AddListener(() => BtnReward());
+            _btnHome.onClick.AddListener(() => BtnHome());
+        }
+
+        public void UpdateCoin()
+        {
+            _txtCoin.text = Manager.Instance.UserData.playerCoin.ToString();
+        }
+        private void OnUpdateCoin(ref EventUpdateCoin eve)
+        {
+            UpdateCoin();
+        }
+
+        public void BtnRewardAds()
+        {
+            int level = Manager.Instance.UserData.levelLevel;
+            int levelChoose = Manager.Instance.UserData.levelChoose;
+
+            Manager.Instance.UserData.playerCoin += 250;
             UIManager.Instance.QueuePop();
-            LevelManager.Instance.SetLevel(PlayerPrefs.GetInt("levelChoose"));
+            LevelManager.Instance.SetLevel(Manager.Instance.UserData.levelChoose);
             LevelManager.Instance.GenerateData();
+            EventManager.Raise(new EventUpdateCoin() { });
+
+            EventManager.Raise(new EventUpdateLevelChoose {
+
+            });
+
+
+        }
+
+        public void BtnReward()
+        {
+            int level = Manager.Instance.UserData.levelLevel;
+            int levelChoose = Manager.Instance.UserData.levelChoose;
+
+            UIManager.Instance.QueuePop();
+            LevelManager.Instance.SetLevel(Manager.Instance.UserData.levelChoose);
+            LevelManager.Instance.GenerateData();
+            EventManager.Raise(new EventUpdateLevelChoose {
+
+            });
         }
 
         public void BtnHome()

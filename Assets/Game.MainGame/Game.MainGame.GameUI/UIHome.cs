@@ -1,4 +1,5 @@
 using BlitzyUI;
+using Game.Modules.Events;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,6 +15,8 @@ namespace Game.MainGame
 
         private ItemLevel _itemChoose;
 
+        public PageView pageView;
+
         public override void OnFocus()
         {
         }
@@ -22,25 +25,45 @@ namespace Game.MainGame
         {
         }
 
+
         public override void OnPop()
         {
             PopFinished();
             GameManager.Instance.onUpdateLevelChoose -= UpdateTextLevelChoose;
+            EventManager.UnsubscribeFrom<EventUpdateCoin>(OnUpdateCoin);
         }
 
         public override void OnPush(Data data)
         {
             PushFinished();
-            CreateScroll();
+            //  CreateScroll();
+            pageView.SetPage();
             UpdateTextLevelChoose();
+            UpdateCoin();
 
             LevelManager.Instance.slotUnder.gameObject.SetActive(false);
             GameManager.Instance.onUpdateLevelChoose += UpdateTextLevelChoose;
+            EventManager.SubscribeTo<EventUpdateCoin>(OnUpdateCoin);
+        }
+
+        private void OnUpdateCoin(ref EventUpdateCoin eve)
+        {
+            UpdateCoin();
         }
 
         public override void OnSetup()
         {
             _btnPlay.onClick.AddListener(() => BtnPlay());
+        }
+
+        public void SetItemChoose(ItemLevel choose)
+        {
+            _itemChoose = choose;
+        }
+
+        public void UpdateCoin()
+        {
+            _txtCoin.text = Manager.Instance.UserData.playerCoin.ToString();
         }
 
         public void BtnPlay()
@@ -59,13 +82,13 @@ namespace Game.MainGame
 
         public void UpdateTextLevelChoose()
         {
-            _txtLevel.text = "Level " + PlayerPrefs.GetInt("levelChoose");
+            _txtLevel.text = "Level " + Manager.Instance.UserData.levelChoose;
         }
 
         public void SetItemChoose(ItemLevel item,int levelC)
         {
             GameManager.Instance.SetLevelChoose(levelC);
-            int level = PlayerPrefs.GetInt("level");
+            int level = Manager.Instance.UserData.levelLevel;
 
             if(_itemChoose.level < level)
             {
@@ -79,44 +102,13 @@ namespace Game.MainGame
             _itemChoose = item;
         }
 
-        public void CreateScroll()
+        public void BtnMenu()
         {
-            for(int i= _tranParent.childCount -1; i >= 0; i--)
-            {
-                Destroy(_tranParent.GetChild(i).gameObject);
-            }
+            UIManager.Instance.QueuePush(GameManager.ScreenUi_Setting, null, "UiSetting", null);
 
-            int levelMax = LevelManager.Instance.GetDatas().listData.Count;
-            int level = PlayerPrefs.GetInt("level");
-            int levelChoose = PlayerPrefs.GetInt("levelChoose");
-
-            for(int i=0; i< 12; i++)
-            {
-                int idx = i;
-                ItemLevel item = Instantiate(_itemLevel, Vector3.zero, Quaternion.identity);
-                item.transform.SetParent(_tranParent);
-                item.transform.localPosition = Vector3.zero;
-                item.transform.localScale = Vector3.one;
-
-                if(i < level)
-                {
-                    item.SetType(1, idx);
-                }
-                else if (i == level)
-                {
-                    item.SetType(3, idx);
-                }
-                else
-                {
-                    item.SetType(0, idx);
-                }
-
-                if(i == levelChoose)
-                {
-                    item.SetType(2, idx);
-                    _itemChoose = item;
-                }
-            }
+            UISetting ui = UIManager.Instance.GetScreen<UISetting>(GameManager.ScreenUi_Setting);
+            ui.ShowMenu();
         }
+
     }
 }

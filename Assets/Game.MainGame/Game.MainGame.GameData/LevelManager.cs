@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using BlitzyUI;
 using DG.Tweening;
+using Game.Modules.Events;
 using Lean.Pool;
 using UnityEngine;
 
@@ -50,7 +51,7 @@ namespace Game.MainGame
 
         public void SetLevel(int Level)
         {
-            _data = _dataLevels.listData[Level];
+            _data = _dataLevels.listData[Level - 1];
         }
 
         public void GenerateData()
@@ -60,6 +61,8 @@ namespace Game.MainGame
             _idOrder = 0;
             _countItem = 0;
             slotUnder.gameObject.SetActive(true);
+            UIGamePlay ui = UIManager.Instance.GetScreen<UIGamePlay>(GameManager.ScreenId_UIGamePlay);
+            ui.StartCountDown(180);
 
           for(int i=0; i< _data.grids.Count; i++)
             {
@@ -157,6 +160,25 @@ namespace Game.MainGame
                 });
         }
 
+        public void RestartLevel()
+        {
+            BoosterRestart();
+        }
+
+        public void Restart()
+        {
+            for (int i = 0; i < _items.Count; i++)
+            {
+                if (_items[i].gameObject.active)
+                {
+                    LeanPool.Despawn(_items[i]);
+                }
+            }
+            _items.Clear();
+            slotUnder.ClearData();
+            GenerateData();
+        }
+
         public void CountDownCountItem()
         {
             _countItem--;
@@ -175,22 +197,43 @@ namespace Game.MainGame
 
         public void BoosterBack()
         {
-            slotUnder.BoosterBack();
+            if (Manager.Instance.UserData.quantityBoosterBack > 0)
+            {
+                slotUnder.BoosterBack();
+            }
+            else
+            {
+                UIManager.Instance.QueuePush(GameManager.ScreenUi_BuyBooster, null, "UIBuyBooster", null);
+                UIBuyBooster ui = UIManager.Instance.GetScreen<UIBuyBooster>(GameManager.ScreenUi_BuyBooster);
+                ui.type = BoosterType.Back;
+                ui.SetUpBoosterBuy();
+            }
         }
 
         public void BoosterRestart()
         {
-            for(int i=0; i< _items.Count; i++)
+            if (Manager.Instance.UserData.quantityBoosterRestart > 0)
             {
-                if (_items[i].gameObject.active)
+                for (int i = 0; i < _items.Count; i++)
                 {
-                    LeanPool.Despawn(_items[i]);
+                    if (_items[i].gameObject.active)
+                    {
+                        LeanPool.Despawn(_items[i]);
+                    }
                 }
+                _items.Clear();
+                slotUnder.ClearData();
+                GenerateData();
+                Manager.Instance.UserData.quantityBoosterRestart--;
+                EventManager.Raise(new EventUpdateBooster() { });
             }
-
-            _items.Clear();
-            slotUnder.ClearData();
-            GenerateData();
+            else
+            {
+                UIManager.Instance.QueuePush(GameManager.ScreenUi_BuyBooster, null, "UIBuyBooster", null);
+                UIBuyBooster ui = UIManager.Instance.GetScreen<UIBuyBooster>(GameManager.ScreenUi_BuyBooster);
+                ui.type = BoosterType.Replay;
+                ui.SetUpBoosterBuy();
+            }
         }
 
         public void ClearData()
@@ -208,7 +251,19 @@ namespace Game.MainGame
 
         public void BoosterLight()
         {
-            slotUnder.BoosterLight();
+            if (Manager.Instance.UserData.quantityBoosterHint > 0)
+            {
+                slotUnder.BoosterLight();
+                Manager.Instance.UserData.quantityBoosterHint--;
+                EventManager.Raise(new EventUpdateBooster() { });
+            }
+            else
+            {
+                UIManager.Instance.QueuePush(GameManager.ScreenUi_BuyBooster, null, "UIBuyBooster", null);
+                UIBuyBooster ui = UIManager.Instance.GetScreen<UIBuyBooster>(GameManager.ScreenUi_BuyBooster);
+                ui.type = BoosterType.Hint;
+                ui.SetUpBoosterBuy();
+            }
         }
     }
 }

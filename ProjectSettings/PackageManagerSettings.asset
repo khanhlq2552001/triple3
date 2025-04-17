@@ -33,6 +33,7 @@ MonoBehaviour:
     - com.brunomikoski.scriptableobjectcollection
     - com.brunomikoski.uimanager
     - jp.co.cyberagent.smartaddresser
+    - com.peturdarri.generic-event-bus
     m_IsDefault: 0
     m_Capabilities: 0
     m_ConfigSource: 4
