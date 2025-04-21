@@ -13,7 +13,9 @@
         "LitMotion.Animation",
         "LitMotion.Editor",
         "LitMotion.Animation.Editor",
-        "GenericEventBus"
+        "GenericEventBus",
+        "NaughtyAttributes.Core",
+        "NaughtyAttributes.Editor"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

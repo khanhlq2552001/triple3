@@ -15,10 +15,10 @@ namespace Game.MainGame
         public Button btnMusic;
         public Button btnVibra;
 
-        public Button btnShop;
-        public Button btnRateUs;
-        public Button btnRestore;
-        public Button btnRemoveAds;
+      //  public Button btnShop;
+     //   public Button btnRateUs;
+     //   public Button btnRestore;
+     //   public Button btnRemoveAds;
         public Button btnLevel;
         public Button btnReplay;
 
@@ -109,6 +109,8 @@ namespace Game.MainGame
                     UIManager.Instance.QueuePush(GameManager.ScreenID_Home, null, "UIHome", null);
                     break;
             }
+            AudioController.instance.CheckMusic();
+            AudioController.instance.CheckSound();
         }
 
         public void Close()
@@ -123,11 +125,11 @@ namespace Game.MainGame
 
         public void ShowPause()
         {
-            btnRateUs.SetActive(false);
-            btnRestore.SetActive(false);
-            btnShop.SetActive(false);
+            //btnRateUs.SetActive(false);
+            //btnRestore.SetActive(false);
+            //btnShop.SetActive(false);
 
-            btnRemoveAds.SetActive(true);
+            //btnRemoveAds.SetActive(true);
             btnLevel.SetActive(true);
             btnReplay.SetActive(true);
             txtTitle.text = "PAUSE";
@@ -138,11 +140,11 @@ namespace Game.MainGame
 
         public void ShowMenu()
         {
-            btnRateUs.SetActive(true);
-            btnRestore.SetActive(true);
-            btnShop.SetActive(true);
+            //btnRateUs.SetActive(true);
+            //btnRestore.SetActive(true);
+            //btnShop.SetActive(true);
 
-            btnRemoveAds.SetActive(false);
+            //btnRemoveAds.SetActive(false);
             btnLevel.SetActive(false);
             btnReplay.SetActive(false);
             _setting = ModeSetting.menu;

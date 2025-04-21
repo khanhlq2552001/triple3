@@ -9,8 +9,10 @@ namespace Game.MainGame
     {
         [SerializeField] private List<GameObject> _objStarsDone;
         [SerializeField] private Text _txtLevel;
+        [SerializeField] private Text _txtLevel1;
+        [SerializeField] private Text _txtLevel2;
+
         [SerializeField] private GameObject _objStar;
-        [SerializeField] private GameObject _next;
         [SerializeField] private Image _imgBG;
         [SerializeField] private Sprite _sprChoose;
         [SerializeField] private Sprite _sprLock;
@@ -57,32 +59,49 @@ namespace Game.MainGame
         {
             this.type = type;
             _txtLevel.text = level.ToString();
+            _txtLevel1.text = level.ToString();
+            _txtLevel2.text = level.ToString();
+
+            bool isOk = false;
+            if (_txtLevel2.gameObject.activeSelf)
+            {
+                isOk = true;
+            }
+            _txtLevel.gameObject.SetActive(false);
+            _txtLevel1.gameObject.SetActive(false);
+            _txtLevel2.gameObject.SetActive(false);
+
             this.level = level;
+
 
             if (type == 0)
             {
                 _imgBG.sprite = _sprLock;
                 _objStar.SetActive(false);
-                _txtLevel.gameObject.SetActive(false);
-                _next.SetActive(false);
+              //  _txtLevel.gameObject.SetActive(false);
+                _txtLevel1.SetActive(true);
             }
             else if (type == 1)
             {
                 _imgBG.sprite = _sprDontLock;
                 _objStar.SetActive(true);
-                _txtLevel.gameObject.SetActive(true);
-                _next.SetActive(false);
+                _txtLevel.SetActive(true);
+              //  _txtLevel.gameObject.SetActive(true);
+                
             }
             else if (type == 2)
             {
                 _imgBG.sprite = _sprChoose;
+                if (!isOk)
+                    _txtLevel.SetActive(true);
+                else _txtLevel2.SetActive(true);
             }
             else if(type == 3)
             {
                 _imgBG.sprite = _sprDontLock;
-                _txtLevel.gameObject.SetActive(true);
+            //    _txtLevel.gameObject.SetActive(true);
                 _objStar.SetActive(false);
-                _next.SetActive(true);
+                _txtLevel2.SetActive(true);
             }
         }
 

@@ -51,11 +51,14 @@ namespace Game.MainGame
 
         public void SetLevel(int Level)
         {
-            _data = _dataLevels.listData[Level - 1];
+            int id = (Level - 1) % (_dataLevels.listData.Count);
+
+            _data = _dataLevels.listData[id];
         }
 
         public void GenerateData()
         {
+            dataThemes.spritesThemes[0].listSpriteTheme.Shuffle();
             controller.State = StateController.pause;
             _items.Clear();
             _idOrder = 0;

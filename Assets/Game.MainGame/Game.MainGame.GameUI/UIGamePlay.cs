@@ -16,7 +16,7 @@ namespace Game.MainGame
         [SerializeField] private Sprite _sprOff;
         [SerializeField] private Button _btnPause;
         [SerializeField] private Text _txtCoin;
-        [SerializeField] private Animator _animDHC;
+   //     [SerializeField] private Animator _animDHC;
         [SerializeField] private Text _txtLevel;
 
         private Coroutine _timeCoroutine;
@@ -140,31 +140,32 @@ namespace Game.MainGame
             ui.ShowPause();
         }
 
-        private float _currentSpeed = 0;
         private float _timeCurrent = 0;
+        private float _startTime = 0;
+        public Image imgProgress;
 
         public void StartCountDown(int time)
         {
+            imgProgress.fillAmount = 1;
             StopCountDown();
-            float speed = (float)1 / time;
-            _animDHC.speed = speed;
-            _currentSpeed = speed;
+          //  _animDHC.speed = speed;
             _timeCurrent = time;
+            _startTime = time;
 
-            _animDHC.SetBool("startTime", true);
-            _animDHC.Play("startTime", 0, 0f);
+         //   _animDHC.SetBool("startTime", true);
+          //  _animDHC.Play("startTime", 0, 0f);
             _timeCoroutine = StartCoroutine(CountTimeCoroutine());
         }
 
         public void ContinuesCountDown()
         {
-            _animDHC.speed = _currentSpeed;
+          //  _animDHC.speed = _currentSpeed;
             _timeCoroutine = StartCoroutine(CountTimeCoroutine());
         }
 
         public void PauseTimeCountDown()
         {
-            _animDHC.speed = 0;
+         //   _animDHC.speed = 0;
             if (_timeCoroutine != null)
             {
                 StopCoroutine(_timeCoroutine);
@@ -174,7 +175,7 @@ namespace Game.MainGame
 
         public void StopCountDown()
         {
-            _animDHC.SetBool("startTime", false);
+        //    _animDHC.SetBool("startTime", false);
 
             if(_timeCoroutine != null)
             {
@@ -189,6 +190,8 @@ namespace Game.MainGame
             {
                 yield return new WaitForSeconds(1f);
                 _timeCurrent--;
+                float value = (float)_timeCurrent / _startTime;
+                imgProgress.fillAmount = value;
             }
             LevelManager.Instance.controller.State = StateController.pause;
             yield return new WaitForSeconds(0.5f);

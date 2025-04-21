@@ -79,6 +79,7 @@ namespace Game.MainGame
                     Manager.Instance.UserData.quantityBoosterRestart++;
                     break;
             }
+            AudioController.instance.PlaySoundBuy();
             Close();
             EventManager.Raise(new EventUpdateCoin() { });
             EventManager.Raise(new EventUpdateBooster() { });

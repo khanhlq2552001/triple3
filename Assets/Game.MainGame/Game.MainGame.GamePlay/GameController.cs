@@ -91,6 +91,7 @@ namespace Game.MainGame
                     if (item == _itemChoose)
                     {
                         LevelManager.Instance.slotUnder.SetItemUnder(item.ID, item);
+                        AudioController.instance.PlaySoundChooseObject();
                         return;
                     }
                 }

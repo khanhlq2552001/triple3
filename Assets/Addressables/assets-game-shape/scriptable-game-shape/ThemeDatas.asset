@@ -14,26 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spritesThemes:
   - listSpriteTheme:
-    - {fileID: 21300000, guid: 46cf13320d5286b4abaa0d4e5efa1699, type: 3}
-    - {fileID: 21300000, guid: 6825c37a664e84142a6796e9b569bd1f, type: 3}
-    - {fileID: 21300000, guid: 6cda7c118ec0ebe4aa07edc640d428a8, type: 3}
-    - {fileID: 21300000, guid: e38d58ee2c64afc44a7ee421b66e0181, type: 3}
-    - {fileID: 21300000, guid: 5a5bbd4000d194c45bcf61753ec785fd, type: 3}
-    - {fileID: 21300000, guid: 62845aa7c47a3e74fb16129c9e72c1cc, type: 3}
-    - {fileID: 21300000, guid: 432edd1e80671814f9b7f46c83d9e503, type: 3}
-    - {fileID: 21300000, guid: c460332cb865d1d438225cbd577b05f1, type: 3}
-    - {fileID: 21300000, guid: 054a3359fbb051c45b767614e467087c, type: 3}
-    - {fileID: 21300000, guid: 0dee55fdcbc274d44ad83fe5c4a4db01, type: 3}
-    - {fileID: 21300000, guid: a23137a6775ba5c40839482f02ab01d9, type: 3}
-    - {fileID: 21300000, guid: 64be75cda57199045a6903431602078d, type: 3}
-    - {fileID: 21300000, guid: d6c6342e81592544a86d8d44b67def93, type: 3}
-    - {fileID: 21300000, guid: 87605001b246ef446ae0d3e1cbc21987, type: 3}
-    - {fileID: 21300000, guid: 2ef90273fbacd524e838d2d24802496c, type: 3}
-    - {fileID: 21300000, guid: 9445f376da2d1fe4db832877d7608f91, type: 3}
-    - {fileID: 21300000, guid: 91069cdd3ee0a3548be0e780683903f8, type: 3}
-    - {fileID: 21300000, guid: bcb2445d89eb6804da7418711f747fe7, type: 3}
-    - {fileID: 21300000, guid: 36a3949c914237640a748567dd88d70e, type: 3}
-    - {fileID: 21300000, guid: 6fd23d6047cae87478e4d2bd907c7bcb, type: 3}
+    - {fileID: 21300000, guid: 31b5b062a9552ed4a8bc0a00c17a2522, type: 3}
+    - {fileID: 21300000, guid: b5918499d210bdb4b980df4f03d6dd5e, type: 3}
+    - {fileID: 21300000, guid: 7faa294aa30684a4abbf1ab55e030707, type: 3}
+    - {fileID: 21300000, guid: a257f4d9c891543479bddd793e3c3a3f, type: 3}
+    - {fileID: 21300000, guid: ef257c8efa56b6e43a5c1ab19faf36c5, type: 3}
+    - {fileID: 21300000, guid: eb652415e34e682439c34532231ac135, type: 3}
+    - {fileID: 21300000, guid: 3f2290986dcc55c48874b3537ad0360b, type: 3}
+    - {fileID: 21300000, guid: a3c57101a6b2d9e42bef833946c4aa55, type: 3}
+    - {fileID: 21300000, guid: 9b4c8c218085f094c826fea862c1da67, type: 3}
+    - {fileID: 21300000, guid: e6870a49894f4b64d8f4bccbe8a2cc50, type: 3}
+    - {fileID: 21300000, guid: 20848089a1b0dd24f82f396d54edf59f, type: 3}
+    - {fileID: 21300000, guid: 180a2fc3b017b964f9096db198bc4161, type: 3}
+    - {fileID: 21300000, guid: 6d924a68cd25071468fa9f00d53fff8d, type: 3}
+    - {fileID: 21300000, guid: 7e1379501d313cc4ca4173b6893e5cde, type: 3}
+    - {fileID: 21300000, guid: dab5c77b652b8af40a69f67755507fdf, type: 3}
+    - {fileID: 21300000, guid: f75098b13b56ebf4b884b453faa2351b, type: 3}
+    - {fileID: 21300000, guid: 222efa86b133fb34bbb5d9a7e5083eeb, type: 3}
+    - {fileID: 21300000, guid: 37243a0711d239b4fbdd09f9f8bd3da6, type: 3}
+    - {fileID: 21300000, guid: 0ba0d5f56fc612245a9f22c7c5357c26, type: 3}
+    - {fileID: 21300000, guid: 37e24d207916efd48af59a6e6ffc1909, type: 3}
   - listSpriteTheme:
     - {fileID: 21300000, guid: d19d36a4bb9c2014eae857946d53fe7c, type: 3}
     - {fileID: 21300000, guid: 9e19e351bf010b5478f1852331b63795, type: 3}

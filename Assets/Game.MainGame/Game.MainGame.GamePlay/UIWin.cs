@@ -32,6 +32,7 @@ namespace Game.MainGame
             PushFinished();
             UpdateCoin();
             EventManager.SubscribeTo<EventUpdateCoin>(OnUpdateCoin);
+            AudioController.instance.PlaySoundWin();
 
             int level = Manager.Instance.UserData.levelLevel;
             int levelChoose = Manager.Instance.UserData.levelChoose;

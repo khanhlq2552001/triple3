@@ -31,6 +31,7 @@ namespace Game.MainGame
             EventManager.Raise(new EventLoseGame() { });
             UpdateCoin();
             EventManager.SubscribeTo<EventUpdateCoin>(OnUpdateCoin);
+            AudioController.instance.PlaySoundLose();
         }
 
         public override void OnSetup()

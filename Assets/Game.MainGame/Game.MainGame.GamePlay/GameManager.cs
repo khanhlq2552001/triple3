@@ -1,5 +1,6 @@
 using System;
 using BlitzyUI;
+using NaughtyAttributes;
 using UnityEngine;
 
 namespace Game.MainGame
@@ -50,6 +51,16 @@ namespace Game.MainGame
             Manager.Instance.UserData.levelChoose = level;
             onUpdateLevelChoose?.Invoke();
             LevelManager.Instance.SetLevel(level);
+        }
+
+        [Button]
+        void Chup()
+        {
+                string namefile = "acc" + UnityEngine.Random.Range(0, 99) + ".png";
+
+                ScreenCapture.CaptureScreenshot(namefile);
+
+                Debug.Log("OK");
         }
     }
 }

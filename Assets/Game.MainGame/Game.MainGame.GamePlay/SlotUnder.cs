@@ -110,6 +110,7 @@ namespace Game.MainGame
                 _itemGrids[_id] = null;
                 _itemGrids[_id - 2] = null;
                 GomHang(_id);
+                AudioController.instance.PlaySoundMatch();
             }
 
             CheckLose();
@@ -132,6 +133,7 @@ namespace Game.MainGame
                         StartCoroutine(DelayLoseCoroutine());
                     }
                 }
+                AudioController.instance.PlaySoundBoom();
             }
         }
 

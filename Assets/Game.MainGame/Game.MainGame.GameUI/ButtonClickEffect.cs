@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 using LitMotion;
+using Game.MainGame;
 
 public class ButtonClickEffect : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
@@ -20,6 +21,7 @@ public class ButtonClickEffect : MonoBehaviour, IPointerDownHandler, IPointerUpH
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        AudioController.instance.PlaySoundButton();
         LMotion.Create(targetTransform.localScale, originalScale * scaleMultiplier, animationDuration)
             .WithEase(Ease.OutQuad)
             .Bind(value => targetTransform.localScale = value);
